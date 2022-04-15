@@ -1,9 +1,9 @@
 ﻿#include "Audio.h"
+#include "AxisIndicator.h"
 #include "DirectXCommon.h"
 #include "GameScene.h"
 #include "TextureManager.h"
 #include "WinApp.h"
-#include "AxisIndicator.h"
 
 // Windowsアプリでのエントリーポイント(main関数)
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
