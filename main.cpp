@@ -1,9 +1,9 @@
 ﻿#include "Audio.h"
-#include "AxisIndicator.h"
 #include "DirectXCommon.h"
 #include "GameScene.h"
 #include "TextureManager.h"
 #include "WinApp.h"
+#include "AxisIndicator.h"
 
 // Windowsアプリでのエントリーポイント(main関数)
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
@@ -17,7 +17,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	GameScene* gameScene = nullptr;
 
 	// ゲームウィンドウの作成
-	win = WinApp::GetInstance(); 
+	win = WinApp::GetInstance();
 	win->CreateGameWindow("LE2C_29_ヤスナガ_ヨウスケ_AL3");
 
 	// DirectX初期化処理 
