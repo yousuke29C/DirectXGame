@@ -17,7 +17,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	GameScene* gameScene = nullptr;
 
 	// ゲームウィンドウの作成
-	win = WinApp::GetInstance();
+	win = WinApp::GetInstance(); 
 	win->CreateGameWindow("LE2C_29_ヤスナガ_ヨウスケ_AL3");
 
 	// DirectX初期化処理 
