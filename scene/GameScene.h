@@ -21,6 +21,11 @@ class GameScene {
 	/// コンストクラタ
 	/// </summary>
 	GameScene();
+	Model* model_ = nullptr;
+	//ワールドトランスフォーム
+	WorldTransform worldTransform_;
+	//ビュープロジェクション
+	ViewProjection viewProjection_;
 
 	/// <summary>
 	/// デストラクタ
@@ -43,11 +48,22 @@ class GameScene {
 	void Draw();
 
   private: // メンバ変数
-	DirectXCommon* dxCommon = nullptr;
-	Input* input = nullptr;
-	Audio* audio = nullptr;
-	DebugText* debugText = nullptr;
+	DirectXCommon* dxCommon_ = nullptr;
+	Input* input_ = nullptr;
+	Audio* audio_ = nullptr;
+	DebugText* debugText_ = nullptr;
 
+	uint32_t textureHandle_ = 0;
+
+	uint32_t soundDataHandle_ = 0;
+
+	uint32_t voiceHandle_ = 0;
+
+	//値を表示したい変数
+	int32_t value_ = 0;
+
+	//スプライト
+	Sprite* sprite_ = nullptr;
 	/// <summary>
 	/// ゲームシーン用
 	/// </summary>
